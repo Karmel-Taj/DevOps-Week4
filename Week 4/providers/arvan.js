@@ -79,7 +79,6 @@ class ArvanProvider extends Provider {
 
     try {
       const sshKeys = await this.getSSHKeys(region);
-      console.log(sshKeys)
       const response = await fetch(`${endpoint}/regions/${region}/servers`, {
         method: 'POST',
         headers: {
