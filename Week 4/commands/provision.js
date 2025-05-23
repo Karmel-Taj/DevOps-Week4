@@ -58,7 +58,7 @@ exports.handler = async argv => {
         setTimeout(() => {
             if (server.ip) {
                 console.log(`Server IP address: ${server.ip}`);
-                console.log(`VM is ready! Connect via: ssh -i ~/.ssh/id_rsa ubuntu@${server.ip}`);
+                console.log(`VM is ready! Connect via: ssh ubuntu@${server.ip}`);
                 console.log('Done!');
             } else {
                 console.log('Server IP address not found');
